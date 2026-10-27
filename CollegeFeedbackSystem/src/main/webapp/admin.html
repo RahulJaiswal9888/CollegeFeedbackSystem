@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Admin Login - FeedbackHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .login-container {
+            min-height: calc(100vh - 70px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+        }
+
+        .login-card {
+            width: 420px;
+            max-width: 100%;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+
+            text-align: center;
+        }
+
+        .login-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .login-card h1 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .login-card .subtitle {
+            margin-bottom: 25px;
+        }
+
+        .login-card label {
+            text-align: left;
+        }
+
+        .login-card button {
+            margin-top: 25px;
+        }
+
+        .back-home {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            color: #2563eb;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        🎓 FeedbackHub
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="feedback.html">
+            Give Feedback
+        </a>
+
+        <a href="admin.html">
+            Admin
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- LOGIN -->
+
+<div class="login-container">
+
+    <div class="login-card">
+
+
+        <div class="login-icon">
+            🔐
+        </div>
+
+
+        <h1>
+            Admin Login
+        </h1>
+
+
+        <p class="subtitle">
+            Login to manage student feedback
+        </p>
+
+
+        <!-- LOGIN FORM -->
+
+        <form action="AdminLoginServlet" method="post">
+
+
+            <label>
+                Username
+            </label>
+
+            <input
+                type="text"
+                name="username"
+                placeholder="Enter username"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                required
+            >
+
+
+            <button type="submit">
+                Login
+            </button>
+
+
+        </form>
+
+
+        <a href="index.html"
+           class="back-home">
+            ← Back to Home
+        </a>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
